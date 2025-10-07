@@ -1,0 +1,20 @@
+{
+  "blog": [
+    {
+      "title": "Translation",
+      "date": "2025-10-07T23:54:00.000+01:00",
+      "thumbnail": "/public/images/uploads/screenshot-2023-11-27-at-18.01.17.png",
+      "rating": 2,
+      "body": "Translation content",
+      "slug": "Trans-1"
+    }
+  ],
+  "about": {
+    "title": "About",
+    "body": "About content"
+  },
+  "home": {
+    "title": "Home",
+    "body": "Home content"
+  }
+}
