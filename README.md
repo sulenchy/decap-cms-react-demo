@@ -1,16 +1,54 @@
-# React + Vite
+# Decap CMS React Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a demonstration project showcasing the integration of [Decap CMS](https://decapcms.org/) with a [React](https://react.dev/) application built with [Vite](https://vitejs.dev/). The project also includes internationalization using [i18next](https://www.i18next.com/).
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To get a local copy up and running, follow these simple steps.
 
-## React Compiler
+### Prerequisites
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-## Expanding the ESLint configuration
+### Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repo
+   ```sh
+   git clone https://github.com/sulenchy/decap-cms-react-demo.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+
+### Development
+
+To start the development server, run:
+
+```sh
+npm run dev
+```
+
+The application will be available at `http://localhost:5173/`.
+
+## Decap CMS
+
+The Decap CMS admin interface is available at `http://localhost:5173/admin/`.
+
+The configuration for the CMS is located in `public/admin/config.yml`. It is configured to use a GitHub backend.
+
+## Internationalization
+
+This project uses [i18next](https://www.i18next.com/) for internationalization. The language files are located in the `public/locales` directory.
+
+The supported languages are English, French, and German.
+
+To add a new language:
+
+1.  Add the language to the `supportedLngs` array in `src/i18n.js`.
+2.  Create a new directory for the language in `public/locales`.
+3.  Create a `translation.json` file in the new language directory.
+4.  Add the new language to the `collections` in `public/admin/config.yml`.
