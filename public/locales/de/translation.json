@@ -1,11 +1,11 @@
 {
   "about": {
-    "title": "",
-    "body": ""
+    "title": "about title in german",
+    "body": "about body in german"
   },
   "home": {
-    "title": "",
-    "body": ""
+    "title": "home title in german",
+    "body": "home body in german"
   },
   "blog": [
     {
